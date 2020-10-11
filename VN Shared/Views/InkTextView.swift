@@ -7,6 +7,18 @@
 
 import SwiftUI
 
+
+struct FormattedButton: ViewModifier {
+    func body(content: Content) -> some View {
+        
+    #if os(tvOS)
+        return content.buttonStyle(CardButtonStyle())
+    #else
+        return content
+    #endif
+    }
+}
+
 struct InkTextView: View {
     @ObservedObject var story: InkStory
     
@@ -20,6 +32,8 @@ struct InkTextView: View {
             return (string, nil)
         }
     }
+    
+    
     
     var body: some View {
         VStack {
@@ -36,7 +50,7 @@ struct InkTextView: View {
                         story.continueStory()
                     } , label: {
                         Text("Continue").padding()
-                    }).buttonStyle(CardButtonStyle()).padding(.horizontal)
+                    }).modifier(FormattedButton()).padding(.horizontal)
                 }
                 
                 // If any options are available, show them as buttons.
@@ -45,7 +59,7 @@ struct InkTextView: View {
                         story.chooseChoiceIndex(option.index)
                     }, label: {
                         Text(option.text).padding()
-                    }).buttonStyle(CardButtonStyle()).padding(.horizontal)
+                    }).modifier(FormattedButton()).padding(.horizontal)
                 }
                 
             }.font(.custom("American Typewriter", size: 32)).padding(.bottom).padding(.bottom)
