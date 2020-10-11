@@ -9,7 +9,7 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>VN.xcscheme_^#shared#^_</key>
+		<key>VN-tvOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -18,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>DE1F62F3252908DA003FFA99</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE80B021253301AD00F8BE5A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

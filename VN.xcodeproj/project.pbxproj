@@ -43,7 +43,7 @@
 
 /* Begin PBXFileReference section */
 		DE19BC2C252C53FC00002BEB /* PortraitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitView.swift; sourceTree = "<group>"; };
-		DE1F62F4252908DA003FFA99 /* VN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1F62F4252908DA003FFA99 /* VN-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VN-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1F62F7252908DA003FFA99 /* VNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNApp.swift; sourceTree = "<group>"; };
 		DE1F62F9252908DA003FFA99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE1F62FB252908DA003FFA99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				DE80B01D2533018700F8BE5A /* VN Shared */,
-				DE1F62F6252908DA003FFA99 /* VN */,
+				DE1F62F6252908DA003FFA99 /* VN-tvOS */,
 				DE80B023253301AD00F8BE5A /* VN-iOS */,
 				DE1F62F5252908DA003FFA99 /* Products */,
 			);
@@ -98,13 +98,13 @@
 		DE1F62F5252908DA003FFA99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE1F62F4252908DA003FFA99 /* VN.app */,
+				DE1F62F4252908DA003FFA99 /* VN-tvOS.app */,
 				DE80B022253301AD00F8BE5A /* VN-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE1F62F6252908DA003FFA99 /* VN */ = {
+		DE1F62F6252908DA003FFA99 /* VN-tvOS */ = {
 			isa = PBXGroup;
 			children = (
 				DE80AFB42530DD1900F8BE5A /* Audio */,
@@ -113,7 +113,7 @@
 				DE1F6300252908DA003FFA99 /* Info.plist */,
 				DE1F62FD252908DA003FFA99 /* Preview Content */,
 			);
-			path = VN;
+			path = "VN-tvOS";
 			sourceTree = "<group>";
 		};
 		DE1F62FD252908DA003FFA99 /* Preview Content */ = {
@@ -235,7 +235,7 @@
 			);
 			name = VN;
 			productName = VN;
-			productReference = DE1F62F4252908DA003FFA99 /* VN.app */;
+			productReference = DE1F62F4252908DA003FFA99 /* VN-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DE80B021253301AD00F8BE5A /* VN-iOS */ = {
@@ -480,16 +480,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"VN/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"VN-tvOS/Preview Content\"";
 				DEVELOPMENT_TEAM = ZXW8GTM6FG;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = VN/Info.plist;
+				INFOPLIST_FILE = "VN-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = eu.thedreamweb.VN;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.thedreamweb.VN-tvOS";
+				PRODUCT_NAME = "VN-tvOS";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 14.0;
@@ -502,16 +502,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"VN/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"VN-tvOS/Preview Content\"";
 				DEVELOPMENT_TEAM = ZXW8GTM6FG;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = VN/Info.plist;
+				INFOPLIST_FILE = "VN-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = eu.thedreamweb.VN;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.thedreamweb.VN-tvOS";
+				PRODUCT_NAME = "VN-tvOS";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 14.0;
