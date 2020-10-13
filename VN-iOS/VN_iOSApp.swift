@@ -21,7 +21,7 @@ struct VN_iOSApp: App {
         foleyPlayer = AudioPlayer(tagToObserve: "foley", in: story, looping: true)
         
         story.retainTags = ["portraitLeft", "portraitRight", "background"]
-        story.loadStory(json: story.inkStoryJson(fileName: "story.ink", fileExtension: "json"))
+        story.loadStory(json: story.inkStoryJson(fileName: "test.ink", fileExtension: "json"))
     }
     
     var body: some Scene {

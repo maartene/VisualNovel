@@ -17,11 +17,15 @@ struct PortraitView: View {
     }
     
     var body: some View {
+        GeometryReader { proxy in
         if portraitName != nil {
             Image(portraitName!)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxHeight: proxy.size.height)
                 .shadow(radius: 10, x: 5, y: 5)
                 .transition(.slide)
-                
+            }
         }
     }
 }

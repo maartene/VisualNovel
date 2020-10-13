@@ -14,8 +14,21 @@ struct FormattedButton: ViewModifier {
     #if os(tvOS)
         return content.buttonStyle(CardButtonStyle())
     #else
-        return content
+        return content.buttonStyle(VNButtonStyle())
     #endif
+    }
+}
+
+
+struct VNButtonStyle: ButtonStyle {
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .font(.custom("American Typewriter", size: 42))
+            .foregroundColor(Color.white)
+            .padding()
+            .background(Color.gray.opacity(0.5))
+            .cornerRadius(15.0)
+            .scaleEffect(configuration.isPressed ? 1.1 : 1.0)
     }
 }
 

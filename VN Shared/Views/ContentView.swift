@@ -6,15 +6,42 @@
 //
 
 import SwiftUI
+
+#if os(macOS)
+import AppKit
+#else
+import UIKit
+#endif
+
+extension View {
+
+    public func background() -> some View {
+        #if os(macOS)
+        return self.background(Color.gray.opacity(0.5))
+        #else
+        return self.background(VisualEffectView(effect: UIBlurEffect(style: .light)).opacity(0.5))
+        #endif
+    }
+
+}
+
 struct ContentView: View {
     @ObservedObject var story: InkStory
     
     var body: some View {
         ZStack {
+            Color.black
             // Background
-            if story.currentTags["background"] != nil {
-                Image(story.currentTags["background"]!)
+            GeometryReader { proxy in
+                if story.currentTags["background"] != nil {
+                    Image(story.currentTags["background"]!)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: proxy.size.width, height: proxy.size.height)
+                        
+                }
             }
+            
             
             // Portraits
             HStack(alignment: .bottom) {
@@ -27,11 +54,17 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 InkTextView(story: story)
-                    .frame(maxWidth: .infinity, minHeight: 300)
-                    .padding()
-                    .background(VisualEffectView(effect: UIBlurEffect(style: .light)).opacity(0.5))
+                                    .frame(maxWidth: .infinity, minHeight: 300)
+                    .padding().background()
+                
+                    
+                //#if os(tvOS) || os(iOS)
+                    //.background(VisualEffectView(effect: UIBlurEffect(style: .light)).opacity(0.5))
+                //#else
+                //.background(Color.gray.opacity(0.5))
+                //#endif
             }
-        }
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -41,8 +74,10 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct VisualEffectView: UIViewRepresentable {
+#if os(tvOS) || os(iOS)
+public struct VisualEffectView: UIViewRepresentable {
     var effect: UIVisualEffect?
-    func makeUIView(context: UIViewRepresentableContext<Self>) -> UIVisualEffectView { UIVisualEffectView() }
-    func updateUIView(_ uiView: UIVisualEffectView, context: UIViewRepresentableContext<Self>) { uiView.effect = effect }
+    public func makeUIView(context: UIViewRepresentableContext<Self>) -> UIVisualEffectView { UIVisualEffectView() }
+    public func updateUIView(_ uiView: UIVisualEffectView, context: UIViewRepresentableContext<Self>) { uiView.effect = effect }
 }
+#endif

@@ -1,14 +1,14 @@
 //
-//  VNApp.swift
-//  VN
+//  VN_macOSApp.swift
+//  VN-macOS
 //
-//  Created by Maarten Engels on 03/10/2020.
+//  Created by Maarten Engels on 13/10/2020.
 //
 
 import SwiftUI
 
 @main
-struct VNApp: App {
+struct VN_macOSApp: App {
     let story: InkStory
     let backgroundMusicPlayer: AudioPlayer
     let sfxPlayer: AudioPlayer
@@ -27,6 +27,7 @@ struct VNApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(story: story)
+                .frame(width: 1280, height: 720)
         }
     }
 }

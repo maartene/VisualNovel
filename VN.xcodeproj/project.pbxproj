@@ -39,6 +39,25 @@
 		DE80B04B253303E500F8BE5A /* PortraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19BC2C252C53FC00002BEB /* PortraitView.swift */; };
 		DE80B04C253303E500F8BE5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F62F9252908DA003FFA99 /* ContentView.swift */; };
 		DE80B04D253303E500F8BE5A /* InkTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80AFA525308A5400F8BE5A /* InkTextView.swift */; };
+		DEB98CB92536206D001C8EBB /* VN_macOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB98CB82536206D001C8EBB /* VN_macOSApp.swift */; };
+		DEB98CBD2536206E001C8EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB98CBC2536206E001C8EBB /* Assets.xcassets */; };
+		DEB98CC02536206E001C8EBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB98CBF2536206E001C8EBB /* Preview Assets.xcassets */; };
+		DEB98CCC253620BF001C8EBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F62F9252908DA003FFA99 /* ContentView.swift */; };
+		DEB98CCD253620BF001C8EBB /* PortraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19BC2C252C53FC00002BEB /* PortraitView.swift */; };
+		DEB98CCE253620BF001C8EBB /* InkTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80AFA525308A5400F8BE5A /* InkTextView.swift */; };
+		DEB98CD2253620C3001C8EBB /* test.ink in Resources */ = {isa = PBXBuildFile; fileRef = DE1F630F252A19B4003FFA99 /* test.ink */; };
+		DEB98CD3253620C3001C8EBB /* story.ink in Resources */ = {isa = PBXBuildFile; fileRef = DE80AFC625319BFA00F8BE5A /* story.ink */; };
+		DEB98CD4253620C3001C8EBB /* test.ink.json in Resources */ = {isa = PBXBuildFile; fileRef = DE1F6310252A19B4003FFA99 /* test.ink.json */; };
+		DEB98CD5253620C3001C8EBB /* story.ink.json in Resources */ = {isa = PBXBuildFile; fileRef = DE80AFC525319BFA00F8BE5A /* story.ink.json */; };
+		DEB98CD9253620CA001C8EBB /* ink.js in Resources */ = {isa = PBXBuildFile; fileRef = DE1F6308252A15A8003FFA99 /* ink.js */; };
+		DEB98CDD253620D1001C8EBB /* InkStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F6309252A15A8003FFA99 /* InkStory.swift */; };
+		DEB98CE225362130001C8EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB98CE12536212D001C8EBB /* Assets.xcassets */; };
+		DEB98CE625362131001C8EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB98CE12536212D001C8EBB /* Assets.xcassets */; };
+		DEB98CE725362131001C8EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB98CE12536212D001C8EBB /* Assets.xcassets */; };
+		DEB98CEB25362188001C8EBB /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80AFB12530D8E400F8BE5A /* AudioPlayer.swift */; };
+		DEB98CEF2536218F001C8EBB /* Forest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DE80AFC02530E2B400F8BE5A /* Forest.m4a */; };
+		DEB98CF325362193001C8EBB /* footsteps.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DE80AFBC2530E1BF00F8BE5A /* footsteps.m4a */; };
+		DEB98CF725362197001C8EBB /* MelancholyAmbience.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DE80AFB62530DD3700F8BE5A /* MelancholyAmbience.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +84,13 @@
 		DE80B02B253301AF00F8BE5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE80B02D253301AF00F8BE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE80B0332533020F00F8BE5A /* VN_iOSApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VN_iOSApp.swift; sourceTree = "<group>"; };
+		DEB98CB62536206D001C8EBB /* VN-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VN-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB98CB82536206D001C8EBB /* VN_macOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VN_macOSApp.swift; sourceTree = "<group>"; };
+		DEB98CBC2536206E001C8EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEB98CBF2536206E001C8EBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DEB98CC12536206E001C8EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEB98CC22536206E001C8EBB /* VN_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VN_macOS.entitlements; sourceTree = "<group>"; };
+		DEB98CE12536212D001C8EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +108,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DEB98CB32536206D001C8EBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,6 +124,7 @@
 				DE80B01D2533018700F8BE5A /* VN Shared */,
 				DE1F62F6252908DA003FFA99 /* VN-tvOS */,
 				DE80B023253301AD00F8BE5A /* VN-iOS */,
+				DEB98CB72536206D001C8EBB /* VN-macOS */,
 				DE1F62F5252908DA003FFA99 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +134,7 @@
 			children = (
 				DE1F62F4252908DA003FFA99 /* VN-tvOS.app */,
 				DE80B022253301AD00F8BE5A /* VN-iOS.app */,
+				DEB98CB62536206D001C8EBB /* VN-macOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,7 +142,6 @@
 		DE1F62F6252908DA003FFA99 /* VN-tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				DE80AFB42530DD1900F8BE5A /* Audio */,
 				DE1F62F7252908DA003FFA99 /* VNApp.swift */,
 				DE1F62FB252908DA003FFA99 /* Assets.xcassets */,
 				DE1F6300252908DA003FFA99 /* Info.plist */,
@@ -192,6 +226,8 @@
 		DE80B01D2533018700F8BE5A /* VN Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DE80AFB42530DD1900F8BE5A /* Audio */,
+				DEB98CE12536212D001C8EBB /* Assets.xcassets */,
 				DE80AFA425308A3F00F8BE5A /* Views */,
 				DE1F630D252A15C4003FFA99 /* Data */,
 				DE1F6307252A15A8003FFA99 /* Ink */,
@@ -214,6 +250,26 @@
 			isa = PBXGroup;
 			children = (
 				DE80B02B253301AF00F8BE5A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DEB98CB72536206D001C8EBB /* VN-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				DEB98CB82536206D001C8EBB /* VN_macOSApp.swift */,
+				DEB98CBC2536206E001C8EBB /* Assets.xcassets */,
+				DEB98CC12536206E001C8EBB /* Info.plist */,
+				DEB98CC22536206E001C8EBB /* VN_macOS.entitlements */,
+				DEB98CBE2536206E001C8EBB /* Preview Content */,
+			);
+			path = "VN-macOS";
+			sourceTree = "<group>";
+		};
+		DEB98CBE2536206E001C8EBB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DEB98CBF2536206E001C8EBB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -255,13 +311,30 @@
 			productReference = DE80B022253301AD00F8BE5A /* VN-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DEB98CB52536206D001C8EBB /* VN-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB98CC52536206E001C8EBB /* Build configuration list for PBXNativeTarget "VN-macOS" */;
+			buildPhases = (
+				DEB98CB22536206D001C8EBB /* Sources */,
+				DEB98CB32536206D001C8EBB /* Frameworks */,
+				DEB98CB42536206D001C8EBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VN-macOS";
+			productName = "VN-macOS";
+			productReference = DEB98CB62536206D001C8EBB /* VN-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		DE1F62EC252908D9003FFA99 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					DE1F62F3252908DA003FFA99 = {
@@ -269,6 +342,9 @@
 					};
 					DE80B021253301AD00F8BE5A = {
 						CreatedOnToolsVersion = 12.0.1;
+					};
+					DEB98CB52536206D001C8EBB = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -287,6 +363,7 @@
 			targets = (
 				DE1F62F3252908DA003FFA99 /* VN */,
 				DE80B021253301AD00F8BE5A /* VN-iOS */,
+				DEB98CB52536206D001C8EBB /* VN-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -298,6 +375,7 @@
 			files = (
 				DE80AFC825319BFA00F8BE5A /* story.ink in Resources */,
 				DE80AFB82530DD7300F8BE5A /* MelancholyAmbience.m4a in Resources */,
+				DEB98CE225362130001C8EBB /* Assets.xcassets in Resources */,
 				DE80AFC725319BFA00F8BE5A /* story.ink.json in Resources */,
 				DE1F6312252A19B4003FFA99 /* test.ink.json in Resources */,
 				DE1F6311252A19B4003FFA99 /* test.ink in Resources */,
@@ -315,6 +393,7 @@
 			files = (
 				DE80B03B253303C200F8BE5A /* story.ink in Resources */,
 				DE80B02C253301AF00F8BE5A /* Preview Assets.xcassets in Resources */,
+				DEB98CE625362131001C8EBB /* Assets.xcassets in Resources */,
 				DE80B03C253303C200F8BE5A /* test.ink in Resources */,
 				DE80B03F253303C800F8BE5A /* ink.js in Resources */,
 				DE80B048253303D800F8BE5A /* MelancholyAmbience.m4a in Resources */,
@@ -323,6 +402,24 @@
 				DE80B03A253303C200F8BE5A /* test.ink.json in Resources */,
 				DE80B039253303C200F8BE5A /* story.ink.json in Resources */,
 				DE80B029253301AF00F8BE5A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB98CB42536206D001C8EBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB98CD4253620C3001C8EBB /* test.ink.json in Resources */,
+				DEB98CD5253620C3001C8EBB /* story.ink.json in Resources */,
+				DEB98CC02536206E001C8EBB /* Preview Assets.xcassets in Resources */,
+				DEB98CD9253620CA001C8EBB /* ink.js in Resources */,
+				DEB98CEF2536218F001C8EBB /* Forest.m4a in Resources */,
+				DEB98CBD2536206E001C8EBB /* Assets.xcassets in Resources */,
+				DEB98CD3253620C3001C8EBB /* story.ink in Resources */,
+				DEB98CF725362197001C8EBB /* MelancholyAmbience.m4a in Resources */,
+				DEB98CE725362131001C8EBB /* Assets.xcassets in Resources */,
+				DEB98CF325362193001C8EBB /* footsteps.m4a in Resources */,
+				DEB98CD2253620C3001C8EBB /* test.ink in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +449,19 @@
 				DE80B04B253303E500F8BE5A /* PortraitView.swift in Sources */,
 				DE80B0342533020F00F8BE5A /* VN_iOSApp.swift in Sources */,
 				DE80B043253303D000F8BE5A /* AudioPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB98CB22536206D001C8EBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB98CCD253620BF001C8EBB /* PortraitView.swift in Sources */,
+				DEB98CCC253620BF001C8EBB /* ContentView.swift in Sources */,
+				DEB98CDD253620D1001C8EBB /* InkStory.swift in Sources */,
+				DEB98CCE253620BF001C8EBB /* InkTextView.swift in Sources */,
+				DEB98CB92536206D001C8EBB /* VN_macOSApp.swift in Sources */,
+				DEB98CEB25362188001C8EBB /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +522,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "VN-tvOS";
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -466,6 +577,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "VN-tvOS";
 				SDKROOT = appletvos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -564,6 +676,56 @@
 			};
 			name = Release;
 		};
+		DEB98CC32536206E001C8EBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "VN-macOS/VN_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"VN-macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = ZXW8GTM6FG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "VN-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.thedreamweb.VN-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DEB98CC42536206E001C8EBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "VN-macOS/VN_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"VN-macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = ZXW8GTM6FG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "VN-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.thedreamweb.VN-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -590,6 +752,15 @@
 			buildConfigurations = (
 				DE80B02F253301AF00F8BE5A /* Debug */,
 				DE80B030253301AF00F8BE5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEB98CC52536206E001C8EBB /* Build configuration list for PBXNativeTarget "VN-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB98CC32536206E001C8EBB /* Debug */,
+				DEB98CC42536206E001C8EBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

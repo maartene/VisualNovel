@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>VN-macOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>VN-tvOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>DE80B021253301AD00F8BE5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DEB98CB52536206D001C8EBB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
