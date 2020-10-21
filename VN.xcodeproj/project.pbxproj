@@ -39,6 +39,9 @@
 		DE80B04B253303E500F8BE5A /* PortraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19BC2C252C53FC00002BEB /* PortraitView.swift */; };
 		DE80B04C253303E500F8BE5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F62F9252908DA003FFA99 /* ContentView.swift */; };
 		DE80B04D253303E500F8BE5A /* InkTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80AFA525308A5400F8BE5A /* InkTextView.swift */; };
+		DE83F2C22540CCEB00833834 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Constants.swift */; };
+		DE83F2C32540CCEB00833834 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Constants.swift */; };
+		DE83F2C42540CCEB00833834 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Constants.swift */; };
 		DEB98CB92536206D001C8EBB /* VN_macOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB98CB82536206D001C8EBB /* VN_macOSApp.swift */; };
 		DEB98CBD2536206E001C8EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB98CBC2536206E001C8EBB /* Assets.xcassets */; };
 		DEB98CC02536206E001C8EBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB98CBF2536206E001C8EBB /* Preview Assets.xcassets */; };
@@ -84,6 +87,7 @@
 		DE80B02B253301AF00F8BE5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE80B02D253301AF00F8BE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE80B0332533020F00F8BE5A /* VN_iOSApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VN_iOSApp.swift; sourceTree = "<group>"; };
+		DE83F2C12540CCEB00833834 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DEB98CB62536206D001C8EBB /* VN-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VN-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB98CB82536206D001C8EBB /* VN_macOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VN_macOSApp.swift; sourceTree = "<group>"; };
 		DEB98CBC2536206E001C8EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 				DE80AFA425308A3F00F8BE5A /* Views */,
 				DE1F630D252A15C4003FFA99 /* Data */,
 				DE1F6307252A15A8003FFA99 /* Ink */,
+				DE83F2C12540CCEB00833834 /* Constants.swift */,
 			);
 			path = "VN Shared";
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 				DE1F62FA252908DA003FFA99 /* ContentView.swift in Sources */,
 				DE80AFA625308A5400F8BE5A /* InkTextView.swift in Sources */,
 				DE19BC2D252C53FC00002BEB /* PortraitView.swift in Sources */,
+				DE83F2C22540CCEB00833834 /* Constants.swift in Sources */,
 				DE1F62F8252908DA003FFA99 /* VNApp.swift in Sources */,
 				DE80AFB22530D8E400F8BE5A /* AudioPlayer.swift in Sources */,
 			);
@@ -447,6 +453,7 @@
 				DE80B040253303C800F8BE5A /* InkStory.swift in Sources */,
 				DE80B04C253303E500F8BE5A /* ContentView.swift in Sources */,
 				DE80B04B253303E500F8BE5A /* PortraitView.swift in Sources */,
+				DE83F2C32540CCEB00833834 /* Constants.swift in Sources */,
 				DE80B0342533020F00F8BE5A /* VN_iOSApp.swift in Sources */,
 				DE80B043253303D000F8BE5A /* AudioPlayer.swift in Sources */,
 			);
@@ -460,6 +467,7 @@
 				DEB98CCC253620BF001C8EBB /* ContentView.swift in Sources */,
 				DEB98CDD253620D1001C8EBB /* InkStory.swift in Sources */,
 				DEB98CCE253620BF001C8EBB /* InkTextView.swift in Sources */,
+				DE83F2C42540CCEB00833834 /* Constants.swift in Sources */,
 				DEB98CB92536206D001C8EBB /* VN_macOSApp.swift in Sources */,
 				DEB98CEB25362188001C8EBB /* AudioPlayer.swift in Sources */,
 			);

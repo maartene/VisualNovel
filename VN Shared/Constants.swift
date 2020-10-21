@@ -6,3 +6,5 @@
 //
 
 import Foundation
+
+let INK_FILE_NAME = "test.ink"
