@@ -54,15 +54,8 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 InkTextView(story: story)
-                                    .frame(maxWidth: .infinity, minHeight: 300)
+                    .frame(maxWidth: .infinity, minHeight: 300)
                     .padding().background()
-                
-                    
-                //#if os(tvOS) || os(iOS)
-                    //.background(VisualEffectView(effect: UIBlurEffect(style: .light)).opacity(0.5))
-                //#else
-                //.background(Color.gray.opacity(0.5))
-                //#endif
             }
         }.edgesIgnoringSafeArea(.all)
     }
