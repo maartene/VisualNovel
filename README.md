@@ -39,6 +39,6 @@ Simple SwiftUI based Visual Novel engine (using Ink)
     * Male example sprite: "Male Student C" by "Elzee" licensed CC BY-NC-SA. https://cloudnovel.net/DAX/character/male-student-c
     * Female example sprite: "Female Student 2" by "Elzee" licensed CC BY-NC-SA. https://cloudnovel.net/DAX/character/female-student-2
     * Background: "Fantasy Forest 2" by Konett licensed CC-BY-3.0. https://cloudnovel.net/konett/background/fantasy-forest-2 
-    * Background music: 
+    * Background music: "BWV.m4a" first three bars of Bachs Prelude no.1 in C Major BWV 846 in a loop hacked together in Garageband by me. Intentially crappy. Licensed CC0.
     * Ambiance example: "Forest.m4a" by VKProduktion licensed CC0. https://freesound.org/people/VKProduktion/sounds/231537/ 
     * SFX example: "forest footsteps" by nathanmanaker licensed CC0. https://freesound.org/people/nathanmanaker/sounds/486953/
