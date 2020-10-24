@@ -19,7 +19,7 @@ Simple SwiftUI based Visual Novel engine (using Ink)
     * `# portraitLeft: sprite` - Show a sprite named 'sprite' on the left part of the screen;
     * `# portraitRight: sprite` - Similar on the right part of the screen;
     * `# bgMusic: some.m4a` - Play some.m4a as background music (loops);
-    * `# foley: another.m4a` - Play background sound effects to add atmosphere. Think like the calm rustling of leafs in the woords (loops);
+    * `# ambiance: another.m4a` - Play background sound effects to add atmosphere. Think like the calm rustling of leafs in the woords (loops);
     * `# sfx: bigExplosion.m4a` - Play a sound effect (one shot).
 * Also, for Ink lines such as:
     `Anna: What were you thinking` - will be interpreted with Anna as the 'speaker'.
@@ -35,3 +35,10 @@ Simple SwiftUI based Visual Novel engine (using Ink)
 
 ## Licensed components
 * This project uses the [Ink language](https://www.inklestudios.com/ink) by inkle Ltd. and [InkJS runtime](https://github.com/y-lohse/inkjs) by Yannick Lohse. Both licensed under the MIT license.
+* Art assets:
+    * Male example sprite: "Male Student C" by "Elzee" licensed CC BY-NC-SA. https://cloudnovel.net/DAX/character/male-student-c
+    * Female example sprite: "Female Student 2" by "Elzee" licensed CC BY-NC-SA. https://cloudnovel.net/DAX/character/female-student-2
+    * Background: "Fantasy Forest 2" by Konett licensed CC-BY-3.0. https://cloudnovel.net/konett/background/fantasy-forest-2 
+    * Background music: 
+    * Ambiance example: "Forest.m4a" by VKProduktion licensed CC0. https://freesound.org/people/VKProduktion/sounds/231537/ 
+    * SFX example: "forest footsteps" by nathanmanaker licensed CC0. https://freesound.org/people/nathanmanaker/sounds/486953/
