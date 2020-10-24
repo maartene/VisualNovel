@@ -4,7 +4,8 @@ Simple SwiftUI based Visual Novel engine (using Ink)
 ## Features
 * Interpret an Ink file and run it as a Visual Novel;
 * Control graphics and audio using tags in Ink;
-* Multiplatform project: can run on tvOS, macOS and iOS.
+* Multiplatform project: can run on tvOS, macOS and iOS;
+* Example 'logo' that can be used as a tvOS icon.
 
 ## Where to put assets
 * Platform independant assets should be placed in the `VN Shared` group;
