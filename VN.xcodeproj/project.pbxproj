@@ -64,6 +64,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D93E2B62781DE37004D5A39 /* DEVELOPMENT_TEAM.template.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEVELOPMENT_TEAM.template.xcconfig; sourceTree = "<group>"; };
+		3D93E2B72781DE37004D5A39 /* DEVELOPMENT_TEAM.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEVELOPMENT_TEAM.xcconfig; sourceTree = "<group>"; };
+		3D93E2B82781DE37004D5A39 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		DE19BC2C252C53FC00002BEB /* PortraitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitView.swift; sourceTree = "<group>"; };
 		DE1F62F4252908DA003FFA99 /* VN-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VN-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1F62F7252908DA003FFA99 /* VNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNApp.swift; sourceTree = "<group>"; };
@@ -122,9 +125,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D93E2B52781DE37004D5A39 /* Xcode-config */ = {
+			isa = PBXGroup;
+			children = (
+				3D93E2B62781DE37004D5A39 /* DEVELOPMENT_TEAM.template.xcconfig */,
+				3D93E2B72781DE37004D5A39 /* DEVELOPMENT_TEAM.xcconfig */,
+				3D93E2B82781DE37004D5A39 /* Shared.xcconfig */,
+			);
+			path = "Xcode-config";
+			sourceTree = "<group>";
+		};
 		DE1F62EB252908D9003FFA99 = {
 			isa = PBXGroup;
 			children = (
+				3D93E2B52781DE37004D5A39 /* Xcode-config */,
 				DE80B01D2533018700F8BE5A /* VN Shared */,
 				DE1F62F6252908DA003FFA99 /* VN-tvOS */,
 				DE80B023253301AD00F8BE5A /* VN-iOS */,
@@ -478,6 +492,7 @@
 /* Begin XCBuildConfiguration section */
 		DE1F6301252908DA003FFA99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D93E2B82781DE37004D5A39 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -540,6 +555,7 @@
 		};
 		DE1F6302252908DA003FFA99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D93E2B82781DE37004D5A39 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -601,7 +617,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"VN-tvOS/Preview Content\"";
-				DEVELOPMENT_TEAM = ZXW8GTM6FG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "VN-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -623,7 +638,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"VN-tvOS/Preview Content\"";
-				DEVELOPMENT_TEAM = ZXW8GTM6FG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "VN-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -645,7 +659,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"VN-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = ZXW8GTM6FG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "VN-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -668,7 +681,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"VN-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = ZXW8GTM6FG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "VN-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -693,7 +705,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"VN-macOS/Preview Content\"";
-				DEVELOPMENT_TEAM = ZXW8GTM6FG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "VN-macOS/Info.plist";
@@ -718,7 +729,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"VN-macOS/Preview Content\"";
-				DEVELOPMENT_TEAM = ZXW8GTM6FG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "VN-macOS/Info.plist";
