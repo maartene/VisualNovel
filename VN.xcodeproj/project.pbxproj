@@ -18,9 +18,9 @@
 		DE30AFAF25441E96005D35C6 /* BWV.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DE30AFAD25441E96005D35C6 /* BWV.m4a */; };
 		DE30AFB025441E96005D35C6 /* BWV.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DE30AFAD25441E96005D35C6 /* BWV.m4a */; };
 		DE6B07052C50E7B0006B5696 /* InkSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE6B07042C50E7B0006B5696 /* InkSwift */; };
-		DE6B07282C50EB94006B5696 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Constants.swift */; };
-		DE6B07292C50EB95006B5696 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Constants.swift */; };
-		DE6B072A2C50EB96006B5696 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Constants.swift */; };
+		DE6B07282C50EB94006B5696 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Shared.swift */; };
+		DE6B07292C50EB95006B5696 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Shared.swift */; };
+		DE6B072A2C50EB96006B5696 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Shared.swift */; };
 		DE6B072D2C50ED41006B5696 /* InkSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE6B072C2C50ED41006B5696 /* InkSwift */; };
 		DE6B072F2C50ED47006B5696 /* InkSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE6B072E2C50ED47006B5696 /* InkSwift */; };
 		DE80AFA625308A5400F8BE5A /* InkTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80AFA525308A5400F8BE5A /* InkTextView.swift */; };
@@ -93,7 +93,7 @@
 		DE80B02B253301AF00F8BE5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE80B02D253301AF00F8BE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE80B0332533020F00F8BE5A /* VN_iOSApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VN_iOSApp.swift; sourceTree = "<group>"; };
-		DE83F2C12540CCEB00833834 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DE83F2C12540CCEB00833834 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		DEB98CB62536206D001C8EBB /* VN-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VN-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB98CB82536206D001C8EBB /* VN_macOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VN_macOSApp.swift; sourceTree = "<group>"; };
 		DEB98CBC2536206E001C8EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -244,7 +244,7 @@
 				DEB98CE12536212D001C8EBB /* Assets.xcassets */,
 				DE80AFA425308A3F00F8BE5A /* Views */,
 				DE1F630D252A15C4003FFA99 /* Data */,
-				DE83F2C12540CCEB00833834 /* Constants.swift */,
+				DE83F2C12540CCEB00833834 /* Shared.swift */,
 			);
 			path = "VN Shared";
 			sourceTree = "<group>";
@@ -462,7 +462,7 @@
 				DE19BC2D252C53FC00002BEB /* PortraitView.swift in Sources */,
 				DE1F62F8252908DA003FFA99 /* VNApp.swift in Sources */,
 				DE80AFB22530D8E400F8BE5A /* AudioPlayer.swift in Sources */,
-				DE6B07282C50EB94006B5696 /* Constants.swift in Sources */,
+				DE6B07282C50EB94006B5696 /* Shared.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +475,7 @@
 				DE80B04B253303E500F8BE5A /* PortraitView.swift in Sources */,
 				DE80B0342533020F00F8BE5A /* VN_iOSApp.swift in Sources */,
 				DE80B043253303D000F8BE5A /* AudioPlayer.swift in Sources */,
-				DE6B07292C50EB95006B5696 /* Constants.swift in Sources */,
+				DE6B07292C50EB95006B5696 /* Shared.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +488,7 @@
 				DEB98CCE253620BF001C8EBB /* InkTextView.swift in Sources */,
 				DEB98CB92536206D001C8EBB /* VN_macOSApp.swift in Sources */,
 				DEB98CEB25362188001C8EBB /* AudioPlayer.swift in Sources */,
-				DE6B072A2C50EB96006B5696 /* Constants.swift in Sources */,
+				DE6B072A2C50EB96006B5696 /* Shared.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
