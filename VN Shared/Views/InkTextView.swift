@@ -23,12 +23,12 @@ struct FormattedButton: ViewModifier {
 struct VNButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
-            .font(.custom("American Typewriter", size: 42))
+            .font(.buttonText)
             .foregroundColor(Color.white)
             .padding()
-            .background(Color.gray.opacity(0.5))
-            .cornerRadius(15.0)
-            .scaleEffect(configuration.isPressed ? 1.1 : 1.0)
+            .background(Color.blue.opacity(0.6))
+            .cornerRadius(10)
+            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
     }
 }
 
@@ -46,36 +46,42 @@ struct InkTextView: View {
         }
     }
     
-    
-    
     var body: some View {
         VStack {
-            // Display the current line of text from the story.
             if let name = text.name {
-                Text(name).font(.custom("American Typewriter", size: 48)).bold().padding()
+                Text(name)
+                    .font(.storyTextLarge.bold())
+                    .padding()
             }
-            Text(text.text).font(.custom("American Typewriter", size: 48)).padding()
+            Text(text.text)
+                .font(.storyText)
+                .padding()
             
             HStack {
-                // Display the "Continue" button if the story can (i.e. is waiting for) continue.
                 if story.canContinue {
                     Button(action: {
                         story.continueStory()
-                    } , label: {
-                        Text("Continue").padding()
-                    }).modifier(FormattedButton()).padding(.horizontal)
+                    }) {
+                        Text("Continue")
+                            .padding()
+                    }
+                    .buttonStyle(VNButtonStyle())
+                    .padding(.horizontal)
                 }
                 
-                // If any options are available, show them as buttons.
                 ForEach(story.options, id: \.index) { option in
                     Button(action: {
                         story.chooseChoiceIndex(option.index)
-                    }, label: {
-                        Text(option.text).padding()
-                    }).modifier(FormattedButton()).padding(.horizontal)
+                    }) {
+                        Text(option.text)
+                            .padding()
+                    }
+                    .buttonStyle(VNButtonStyle())
+                    .padding(.horizontal)
                 }
-                
-            }.font(.custom("American Typewriter", size: 32)).padding(.bottom).padding(.bottom)
+            }
+            .font(.buttonText)
+            .padding(.bottom)
         }
     }
 }

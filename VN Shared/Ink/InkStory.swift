@@ -103,8 +103,8 @@ class InkStory: ObservableObject {
           print("Finished loading InkStory.")
       }
 
-    @Published var currentText: String
-    @Published var canContinue: Bool
+
+
     @Published var options: [Option]
     @Published var globalTags: [String: String]
     @Published var currentErrors: [String]
@@ -113,7 +113,19 @@ class InkStory: ObservableObject {
     @Published var currentTags: [String: String]
     @Published var oberservedVariables: [String: JSValue]
     
-    private func refreshState() {
+    @Published private(set) var currentText: String = ""
+    private(set) var canContinue: Bool = false {
+        willSet {
+            if newValue != canContinue {
+                objectWillChange.send()
+            }
+        }
+    }
+    
+    func refreshState() {
+        // Update properties
+        objectWillChange.send()
+
         currentText = jsContext.evaluateScript("story.currentText;")?.toString() ?? ""
         refreshOptions()
         parseTags()
@@ -121,12 +133,23 @@ class InkStory: ObservableObject {
         refreshErrors()
         _ = _storyCanContinue()
     }
+    private let jsQueue = DispatchQueue(label: "com.yourapp.jsqueue", qos: .userInitiated)
+    
+    func executeJS(_ script: String, completion: @escaping (JSValue?) -> Void) {
+        jsQueue.async { [weak self] in
+            guard let self = self else { return }
+            let result = self.jsContext.evaluateScript(script)
+            DispatchQueue.main.async {
+                completion(result)
+            }
+        }
+    }
     
     @discardableResult
-    func continueStory() -> String {
-        _ = jsContext.evaluateScript("story.Continue();")
-        refreshState()
-        return currentText
+    func continueStory() {
+        executeJS("story.Continue();") { [weak self] _ in
+            self?.refreshState()
+        }
     }
     
     /// Returns the current story text (bridging InkJS 'currentText' variable)
