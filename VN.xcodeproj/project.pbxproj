@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,13 +12,17 @@
 		DE1F62FA252908DA003FFA99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F62F9252908DA003FFA99 /* ContentView.swift */; };
 		DE1F62FC252908DA003FFA99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1F62FB252908DA003FFA99 /* Assets.xcassets */; };
 		DE1F62FF252908DA003FFA99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1F62FE252908DA003FFA99 /* Preview Assets.xcassets */; };
-		DE1F630A252A15A8003FFA99 /* ink.js in Resources */ = {isa = PBXBuildFile; fileRef = DE1F6308252A15A8003FFA99 /* ink.js */; };
-		DE1F630B252A15A8003FFA99 /* InkStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F6309252A15A8003FFA99 /* InkStory.swift */; };
 		DE1F6311252A19B4003FFA99 /* test.ink in Resources */ = {isa = PBXBuildFile; fileRef = DE1F630F252A19B4003FFA99 /* test.ink */; };
 		DE1F6312252A19B4003FFA99 /* test.ink.json in Resources */ = {isa = PBXBuildFile; fileRef = DE1F6310252A19B4003FFA99 /* test.ink.json */; };
 		DE30AFAE25441E96005D35C6 /* BWV.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DE30AFAD25441E96005D35C6 /* BWV.m4a */; };
 		DE30AFAF25441E96005D35C6 /* BWV.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DE30AFAD25441E96005D35C6 /* BWV.m4a */; };
 		DE30AFB025441E96005D35C6 /* BWV.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DE30AFAD25441E96005D35C6 /* BWV.m4a */; };
+		DE6B07052C50E7B0006B5696 /* InkSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE6B07042C50E7B0006B5696 /* InkSwift */; };
+		DE6B07282C50EB94006B5696 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Constants.swift */; };
+		DE6B07292C50EB95006B5696 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Constants.swift */; };
+		DE6B072A2C50EB96006B5696 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Constants.swift */; };
+		DE6B072D2C50ED41006B5696 /* InkSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE6B072C2C50ED41006B5696 /* InkSwift */; };
+		DE6B072F2C50ED47006B5696 /* InkSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE6B072E2C50ED47006B5696 /* InkSwift */; };
 		DE80AFA625308A5400F8BE5A /* InkTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80AFA525308A5400F8BE5A /* InkTextView.swift */; };
 		DE80AFB22530D8E400F8BE5A /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80AFB12530D8E400F8BE5A /* AudioPlayer.swift */; };
 		DE80AFC725319BFA00F8BE5A /* story.ink.json in Resources */ = {isa = PBXBuildFile; fileRef = DE80AFC525319BFA00F8BE5A /* story.ink.json */; };
@@ -30,15 +34,10 @@
 		DE80B03A253303C200F8BE5A /* test.ink.json in Resources */ = {isa = PBXBuildFile; fileRef = DE1F6310252A19B4003FFA99 /* test.ink.json */; };
 		DE80B03B253303C200F8BE5A /* story.ink in Resources */ = {isa = PBXBuildFile; fileRef = DE80AFC625319BFA00F8BE5A /* story.ink */; };
 		DE80B03C253303C200F8BE5A /* test.ink in Resources */ = {isa = PBXBuildFile; fileRef = DE1F630F252A19B4003FFA99 /* test.ink */; };
-		DE80B03F253303C800F8BE5A /* ink.js in Resources */ = {isa = PBXBuildFile; fileRef = DE1F6308252A15A8003FFA99 /* ink.js */; };
-		DE80B040253303C800F8BE5A /* InkStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F6309252A15A8003FFA99 /* InkStory.swift */; };
 		DE80B043253303D000F8BE5A /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80AFB12530D8E400F8BE5A /* AudioPlayer.swift */; };
 		DE80B04B253303E500F8BE5A /* PortraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19BC2C252C53FC00002BEB /* PortraitView.swift */; };
 		DE80B04C253303E500F8BE5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F62F9252908DA003FFA99 /* ContentView.swift */; };
 		DE80B04D253303E500F8BE5A /* InkTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80AFA525308A5400F8BE5A /* InkTextView.swift */; };
-		DE83F2C22540CCEB00833834 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Constants.swift */; };
-		DE83F2C32540CCEB00833834 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Constants.swift */; };
-		DE83F2C42540CCEB00833834 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83F2C12540CCEB00833834 /* Constants.swift */; };
 		DEB98CB92536206D001C8EBB /* VN_macOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB98CB82536206D001C8EBB /* VN_macOSApp.swift */; };
 		DEB98CBD2536206E001C8EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB98CBC2536206E001C8EBB /* Assets.xcassets */; };
 		DEB98CC02536206E001C8EBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB98CBF2536206E001C8EBB /* Preview Assets.xcassets */; };
@@ -49,8 +48,6 @@
 		DEB98CD3253620C3001C8EBB /* story.ink in Resources */ = {isa = PBXBuildFile; fileRef = DE80AFC625319BFA00F8BE5A /* story.ink */; };
 		DEB98CD4253620C3001C8EBB /* test.ink.json in Resources */ = {isa = PBXBuildFile; fileRef = DE1F6310252A19B4003FFA99 /* test.ink.json */; };
 		DEB98CD5253620C3001C8EBB /* story.ink.json in Resources */ = {isa = PBXBuildFile; fileRef = DE80AFC525319BFA00F8BE5A /* story.ink.json */; };
-		DEB98CD9253620CA001C8EBB /* ink.js in Resources */ = {isa = PBXBuildFile; fileRef = DE1F6308252A15A8003FFA99 /* ink.js */; };
-		DEB98CDD253620D1001C8EBB /* InkStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F6309252A15A8003FFA99 /* InkStory.swift */; };
 		DEB98CE225362130001C8EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB98CE12536212D001C8EBB /* Assets.xcassets */; };
 		DEB98CE625362131001C8EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB98CE12536212D001C8EBB /* Assets.xcassets */; };
 		DEB98CE725362131001C8EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB98CE12536212D001C8EBB /* Assets.xcassets */; };
@@ -63,10 +60,20 @@
 		DEE5893A2541C75100B7BEFB /* footsteps.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DEE589372541C75100B7BEFB /* footsteps.m4a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DE6B07222C50EA79006B5696 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		3D93E2B62781DE37004D5A39 /* DEVELOPMENT_TEAM.template.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEVELOPMENT_TEAM.template.xcconfig; sourceTree = "<group>"; };
-		3D93E2B72781DE37004D5A39 /* DEVELOPMENT_TEAM.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEVELOPMENT_TEAM.xcconfig; sourceTree = "<group>"; };
-		3D93E2B82781DE37004D5A39 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		DE19BC2C252C53FC00002BEB /* PortraitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitView.swift; sourceTree = "<group>"; };
 		DE1F62F4252908DA003FFA99 /* VN-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VN-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1F62F7252908DA003FFA99 /* VNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNApp.swift; sourceTree = "<group>"; };
@@ -74,8 +81,6 @@
 		DE1F62FB252908DA003FFA99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE1F62FE252908DA003FFA99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE1F6300252908DA003FFA99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE1F6308252A15A8003FFA99 /* ink.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ink.js; sourceTree = "<group>"; };
-		DE1F6309252A15A8003FFA99 /* InkStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InkStory.swift; sourceTree = "<group>"; };
 		DE1F630F252A19B4003FFA99 /* test.ink */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.ink; sourceTree = "<group>"; };
 		DE1F6310252A19B4003FFA99 /* test.ink.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.ink.json; sourceTree = "<group>"; };
 		DE30AFAD25441E96005D35C6 /* BWV.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BWV.m4a; sourceTree = "<group>"; };
@@ -105,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6B07052C50E7B0006B5696 /* InkSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6B072D2C50ED41006B5696 /* InkSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,31 +126,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6B072F2C50ED47006B5696 /* InkSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D93E2B52781DE37004D5A39 /* Xcode-config */ = {
-			isa = PBXGroup;
-			children = (
-				3D93E2B62781DE37004D5A39 /* DEVELOPMENT_TEAM.template.xcconfig */,
-				3D93E2B72781DE37004D5A39 /* DEVELOPMENT_TEAM.xcconfig */,
-				3D93E2B82781DE37004D5A39 /* Shared.xcconfig */,
-			);
-			path = "Xcode-config";
-			sourceTree = "<group>";
-		};
 		DE1F62EB252908D9003FFA99 = {
 			isa = PBXGroup;
 			children = (
-				3D93E2B52781DE37004D5A39 /* Xcode-config */,
 				DE80B01D2533018700F8BE5A /* VN Shared */,
 				DE1F62F6252908DA003FFA99 /* VN-tvOS */,
 				DE80B023253301AD00F8BE5A /* VN-iOS */,
 				DEB98CB72536206D001C8EBB /* VN-macOS */,
 				DE1F62F5252908DA003FFA99 /* Products */,
+				DE6B072B2C50ED41006B5696 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,15 +174,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DE1F6307252A15A8003FFA99 /* Ink */ = {
-			isa = PBXGroup;
-			children = (
-				DE1F6308252A15A8003FFA99 /* ink.js */,
-				DE1F6309252A15A8003FFA99 /* InkStory.swift */,
-			);
-			path = Ink;
-			sourceTree = "<group>";
-		};
 		DE1F630D252A15C4003FFA99 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +183,13 @@
 				DE1F6310252A19B4003FFA99 /* test.ink.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		DE6B072B2C50ED41006B5696 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DE80AFA425308A3F00F8BE5A /* Views */ = {
@@ -248,7 +244,6 @@
 				DEB98CE12536212D001C8EBB /* Assets.xcassets */,
 				DE80AFA425308A3F00F8BE5A /* Views */,
 				DE1F630D252A15C4003FFA99 /* Data */,
-				DE1F6307252A15A8003FFA99 /* Ink */,
 				DE83F2C12540CCEB00833834 /* Constants.swift */,
 			);
 			path = "VN Shared";
@@ -303,12 +298,17 @@
 				DE1F62F0252908DA003FFA99 /* Sources */,
 				DE1F62F1252908DA003FFA99 /* Frameworks */,
 				DE1F62F2252908DA003FFA99 /* Resources */,
+				DE6B07222C50EA79006B5696 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DE6B07112C50EA1A006B5696 /* PBXTargetDependency */,
 			);
 			name = VN;
+			packageProductDependencies = (
+				DE6B07042C50E7B0006B5696 /* InkSwift */,
+			);
 			productName = VN;
 			productReference = DE1F62F4252908DA003FFA99 /* VN-tvOS.app */;
 			productType = "com.apple.product-type.application";
@@ -324,8 +324,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				DE6B070D2C50EA0D006B5696 /* PBXTargetDependency */,
 			);
 			name = "VN-iOS";
+			packageProductDependencies = (
+				DE6B072C2C50ED41006B5696 /* InkSwift */,
+			);
 			productName = "VN-iOS";
 			productReference = DE80B022253301AD00F8BE5A /* VN-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -341,8 +345,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				DE6B070F2C50EA15006B5696 /* PBXTargetDependency */,
 			);
 			name = "VN-macOS";
+			packageProductDependencies = (
+				DE6B072E2C50ED47006B5696 /* InkSwift */,
+			);
 			productName = "VN-macOS";
 			productReference = DEB98CB62536206D001C8EBB /* VN-macOS.app */;
 			productType = "com.apple.product-type.application";
@@ -376,6 +384,9 @@
 				Base,
 			);
 			mainGroup = DE1F62EB252908D9003FFA99;
+			packageReferences = (
+				DE6B07032C50E7B0006B5696 /* XCRemoteSwiftPackageReference "InkSwift" */,
+			);
 			productRefGroup = DE1F62F5252908DA003FFA99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -402,7 +413,6 @@
 				DE1F62FF252908DA003FFA99 /* Preview Assets.xcassets in Resources */,
 				DEE5892E2541C6F100B7BEFB /* Forest.m4a in Resources */,
 				DE1F62FC252908DA003FFA99 /* Assets.xcassets in Resources */,
-				DE1F630A252A15A8003FFA99 /* ink.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +426,6 @@
 				DEB98CE625362131001C8EBB /* Assets.xcassets in Resources */,
 				DE30AFAF25441E96005D35C6 /* BWV.m4a in Resources */,
 				DE80B03C253303C200F8BE5A /* test.ink in Resources */,
-				DE80B03F253303C800F8BE5A /* ink.js in Resources */,
 				DEE5892F2541C6F100B7BEFB /* Forest.m4a in Resources */,
 				DE80B03A253303C200F8BE5A /* test.ink.json in Resources */,
 				DE80B039253303C200F8BE5A /* story.ink.json in Resources */,
@@ -433,7 +442,6 @@
 				DEE5893A2541C75100B7BEFB /* footsteps.m4a in Resources */,
 				DEB98CC02536206E001C8EBB /* Preview Assets.xcassets in Resources */,
 				DE30AFB025441E96005D35C6 /* BWV.m4a in Resources */,
-				DEB98CD9253620CA001C8EBB /* ink.js in Resources */,
 				DEB98CBD2536206E001C8EBB /* Assets.xcassets in Resources */,
 				DEB98CD3253620C3001C8EBB /* story.ink in Resources */,
 				DEE589302541C6F100B7BEFB /* Forest.m4a in Resources */,
@@ -449,13 +457,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE1F630B252A15A8003FFA99 /* InkStory.swift in Sources */,
 				DE1F62FA252908DA003FFA99 /* ContentView.swift in Sources */,
 				DE80AFA625308A5400F8BE5A /* InkTextView.swift in Sources */,
 				DE19BC2D252C53FC00002BEB /* PortraitView.swift in Sources */,
-				DE83F2C22540CCEB00833834 /* Constants.swift in Sources */,
 				DE1F62F8252908DA003FFA99 /* VNApp.swift in Sources */,
 				DE80AFB22530D8E400F8BE5A /* AudioPlayer.swift in Sources */,
+				DE6B07282C50EB94006B5696 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,12 +471,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE80B04D253303E500F8BE5A /* InkTextView.swift in Sources */,
-				DE80B040253303C800F8BE5A /* InkStory.swift in Sources */,
 				DE80B04C253303E500F8BE5A /* ContentView.swift in Sources */,
 				DE80B04B253303E500F8BE5A /* PortraitView.swift in Sources */,
-				DE83F2C32540CCEB00833834 /* Constants.swift in Sources */,
 				DE80B0342533020F00F8BE5A /* VN_iOSApp.swift in Sources */,
 				DE80B043253303D000F8BE5A /* AudioPlayer.swift in Sources */,
+				DE6B07292C50EB95006B5696 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,20 +485,33 @@
 			files = (
 				DEB98CCD253620BF001C8EBB /* PortraitView.swift in Sources */,
 				DEB98CCC253620BF001C8EBB /* ContentView.swift in Sources */,
-				DEB98CDD253620D1001C8EBB /* InkStory.swift in Sources */,
 				DEB98CCE253620BF001C8EBB /* InkTextView.swift in Sources */,
-				DE83F2C42540CCEB00833834 /* Constants.swift in Sources */,
 				DEB98CB92536206D001C8EBB /* VN_macOSApp.swift in Sources */,
 				DEB98CEB25362188001C8EBB /* AudioPlayer.swift in Sources */,
+				DE6B072A2C50EB96006B5696 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DE6B070D2C50EA0D006B5696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = DE6B070C2C50EA0D006B5696 /* InkSwift */;
+		};
+		DE6B070F2C50EA15006B5696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = DE6B070E2C50EA15006B5696 /* InkSwift */;
+		};
+		DE6B07112C50EA1A006B5696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = DE6B07102C50EA1A006B5696 /* InkSwift */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		DE1F6301252908DA003FFA99 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D93E2B82781DE37004D5A39 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -555,7 +574,6 @@
 		};
 		DE1F6302252908DA003FFA99 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D93E2B82781DE37004D5A39 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -613,6 +631,7 @@
 		DE1F6304252908DA003FFA99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -634,6 +653,7 @@
 		DE1F6305252908DA003FFA99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -659,6 +679,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"VN-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = ZXW8GTM6FG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "VN-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -681,6 +702,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"VN-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = ZXW8GTM6FG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "VN-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -784,6 +806,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE6B07032C50E7B0006B5696 /* XCRemoteSwiftPackageReference "InkSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maartene/InkSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE6B07042C50E7B0006B5696 /* InkSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6B07032C50E7B0006B5696 /* XCRemoteSwiftPackageReference "InkSwift" */;
+			productName = InkSwift;
+		};
+		DE6B070C2C50EA0D006B5696 /* InkSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6B07032C50E7B0006B5696 /* XCRemoteSwiftPackageReference "InkSwift" */;
+			productName = InkSwift;
+		};
+		DE6B070E2C50EA15006B5696 /* InkSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6B07032C50E7B0006B5696 /* XCRemoteSwiftPackageReference "InkSwift" */;
+			productName = InkSwift;
+		};
+		DE6B07102C50EA1A006B5696 /* InkSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6B07032C50E7B0006B5696 /* XCRemoteSwiftPackageReference "InkSwift" */;
+			productName = InkSwift;
+		};
+		DE6B072C2C50ED41006B5696 /* InkSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6B07032C50E7B0006B5696 /* XCRemoteSwiftPackageReference "InkSwift" */;
+			productName = InkSwift;
+		};
+		DE6B072E2C50ED47006B5696 /* InkSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE6B07032C50E7B0006B5696 /* XCRemoteSwiftPackageReference "InkSwift" */;
+			productName = InkSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE1F62EC252908D9003FFA99 /* Project object */;
 }

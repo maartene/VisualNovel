@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import InkSwift
 
 struct PortraitView: View {
     @ObservedObject var story: InkStory

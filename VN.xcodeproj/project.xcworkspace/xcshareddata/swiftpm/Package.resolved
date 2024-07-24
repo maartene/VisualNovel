@@ -1,0 +1,24 @@
+{
+  "originHash" : "58d9be01755cafef37f31be295bb40bef5f1693f205edf08522b6d0dedf982e8",
+  "pins" : [
+    {
+      "identity" : "inkswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/maartene/InkSwift.git",
+      "state" : {
+        "revision" : "7bb981fba8e358c8a628238b96909942e8dc86ae",
+        "version" : "2.0.0"
+      }
+    },
+    {
+      "identity" : "jxkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jectivex/JXKit.git",
+      "state" : {
+        "revision" : "1d2c56ada375aa14c9ec2eb299d27690949fb5a4",
+        "version" : "3.5.1"
+      }
+    }
+  ],
+  "version" : 3
+}

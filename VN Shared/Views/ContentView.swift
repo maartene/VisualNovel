@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import InkSwift
 
 #if os(macOS)
 import AppKit
