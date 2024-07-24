@@ -1,6 +1,11 @@
 # VisualNovel
 Simple SwiftUI based Visual Novel engine (using Ink)
 
+```shell
+brew tap ephread/ink
+brew install inklecate
+```
+
 ## Features
 * Interpret an Ink file and run it as a Visual Novel;
 * Control graphics and audio using tags in Ink;
