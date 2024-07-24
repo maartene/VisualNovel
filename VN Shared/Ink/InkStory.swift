@@ -47,25 +47,62 @@ class InkStory: ObservableObject {
     }
     
     func loadStory(json: String) {
-        guard let jsInkUrl = Bundle.main.url(forResource: "ink", withExtension: "js") else {
-            fatalError("Failed to locate InkJS in bundle.")
-        }
-        
-        guard let data = try? Data(contentsOf: jsInkUrl) else {
-            fatalError("Failed to load InkJS from bundle.")
-        }
-        
-        guard let jsInkUrlString = String(data: data, encoding: .utf8) else {
-            fatalError("Unable to parse InkJS as string.")
-        }
-        
-        jsContext.evaluateScript(jsInkUrlString)
-        jsContext.evaluateScript("story = new inkjs.Story(\(json));")
-        continueStory()
-        
-        print("Succesfully loaded InkStory.")
-    }
-    
+          guard let jsInkUrl = Bundle.main.url(forResource: "ink", withExtension: "js") else {
+              fatalError("Failed to locate InkJS in bundle.")
+          }
+
+          guard let data = try? Data(contentsOf: jsInkUrl) else {
+              fatalError("Failed to load InkJS from bundle.")
+          }
+
+          guard let jsInkUrlString = String(data: data, encoding: .utf8) else {
+              fatalError("Unable to parse InkJS as string.")
+          }
+
+          jsContext.exceptionHandler = { context, exception in
+              print("JS Exception: \(exception?.toString() ?? "unknown error")")
+          }
+
+          print("Evaluating ink.js")
+          jsContext.evaluateScript(jsInkUrlString)
+
+          // Check if inkjs is defined
+          if jsContext.evaluateScript("typeof inkjs").toString() == "undefined" {
+              print("Error: inkjs is not defined. Check if ink.js is loaded correctly.")
+              return
+          }
+
+          print("Creating story with JSON")
+          let createStoryScript = """
+          try {
+              if (typeof inkjs === 'undefined') {
+                  throw new Error('inkjs is undefined');
+              }
+              if (typeof inkjs.Story === 'undefined') {
+                  throw new Error('inkjs.Story is undefined');
+              }
+              var storyJson = \(json);
+              story = new inkjs.Story(storyJson);
+              console.log('Story created successfully');
+          } catch(e) {
+              console.error('Error creating story:', e.message);
+              throw e;
+          }
+          """
+          jsContext.evaluateScript(createStoryScript)
+
+          // Verify that story was created
+          if jsContext.evaluateScript("typeof story").toString() == "undefined" {
+              print("Error: story object was not created. Check the JSON and ink.js compatibility.")
+              return
+          }
+
+          print("Continuing story")
+          continueStory()
+
+          print("Finished loading InkStory.")
+      }
+
     @Published var currentText: String
     @Published var canContinue: Bool
     @Published var options: [Option]
