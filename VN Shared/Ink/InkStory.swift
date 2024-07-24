@@ -47,27 +47,64 @@ class InkStory: ObservableObject {
     }
     
     func loadStory(json: String) {
-        guard let jsInkUrl = Bundle.main.url(forResource: "ink", withExtension: "js") else {
-            fatalError("Failed to locate InkJS in bundle.")
-        }
-        
-        guard let data = try? Data(contentsOf: jsInkUrl) else {
-            fatalError("Failed to load InkJS from bundle.")
-        }
-        
-        guard let jsInkUrlString = String(data: data, encoding: .utf8) else {
-            fatalError("Unable to parse InkJS as string.")
-        }
-        
-        jsContext.evaluateScript(jsInkUrlString)
-        jsContext.evaluateScript("story = new inkjs.Story(\(json));")
-        continueStory()
-        
-        print("Succesfully loaded InkStory.")
-    }
-    
-    @Published var currentText: String
-    @Published var canContinue: Bool
+          guard let jsInkUrl = Bundle.main.url(forResource: "ink", withExtension: "js") else {
+              fatalError("Failed to locate InkJS in bundle.")
+          }
+
+          guard let data = try? Data(contentsOf: jsInkUrl) else {
+              fatalError("Failed to load InkJS from bundle.")
+          }
+
+          guard let jsInkUrlString = String(data: data, encoding: .utf8) else {
+              fatalError("Unable to parse InkJS as string.")
+          }
+
+          jsContext.exceptionHandler = { context, exception in
+              print("JS Exception: \(exception?.toString() ?? "unknown error")")
+          }
+
+          print("Evaluating ink.js")
+          jsContext.evaluateScript(jsInkUrlString)
+
+          // Check if inkjs is defined
+          if jsContext.evaluateScript("typeof inkjs").toString() == "undefined" {
+              print("Error: inkjs is not defined. Check if ink.js is loaded correctly.")
+              return
+          }
+
+          print("Creating story with JSON")
+          let createStoryScript = """
+          try {
+              if (typeof inkjs === 'undefined') {
+                  throw new Error('inkjs is undefined');
+              }
+              if (typeof inkjs.Story === 'undefined') {
+                  throw new Error('inkjs.Story is undefined');
+              }
+              var storyJson = \(json);
+              story = new inkjs.Story(storyJson);
+              console.log('Story created successfully');
+          } catch(e) {
+              console.error('Error creating story:', e.message);
+              throw e;
+          }
+          """
+          jsContext.evaluateScript(createStoryScript)
+
+          // Verify that story was created
+          if jsContext.evaluateScript("typeof story").toString() == "undefined" {
+              print("Error: story object was not created. Check the JSON and ink.js compatibility.")
+              return
+          }
+
+          print("Continuing story")
+          continueStory()
+
+          print("Finished loading InkStory.")
+      }
+
+
+
     @Published var options: [Option]
     @Published var globalTags: [String: String]
     @Published var currentErrors: [String]
@@ -76,7 +113,19 @@ class InkStory: ObservableObject {
     @Published var currentTags: [String: String]
     @Published var oberservedVariables: [String: JSValue]
     
-    private func refreshState() {
+    @Published private(set) var currentText: String = ""
+    private(set) var canContinue: Bool = false {
+        willSet {
+            if newValue != canContinue {
+                objectWillChange.send()
+            }
+        }
+    }
+    
+    func refreshState() {
+        // Update properties
+        objectWillChange.send()
+
         currentText = jsContext.evaluateScript("story.currentText;")?.toString() ?? ""
         refreshOptions()
         parseTags()
@@ -84,12 +133,23 @@ class InkStory: ObservableObject {
         refreshErrors()
         _ = _storyCanContinue()
     }
+    private let jsQueue = DispatchQueue(label: "com.yourapp.jsqueue", qos: .userInitiated)
+    
+    func executeJS(_ script: String, completion: @escaping (JSValue?) -> Void) {
+        jsQueue.async { [weak self] in
+            guard let self = self else { return }
+            let result = self.jsContext.evaluateScript(script)
+            DispatchQueue.main.async {
+                completion(result)
+            }
+        }
+    }
     
     @discardableResult
-    func continueStory() -> String {
-        _ = jsContext.evaluateScript("story.Continue();")
-        refreshState()
-        return currentText
+    func continueStory() {
+        executeJS("story.Continue();") { [weak self] _ in
+            self?.refreshState()
+        }
     }
     
     /// Returns the current story text (bridging InkJS 'currentText' variable)

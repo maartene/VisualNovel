@@ -8,15 +8,26 @@
 import SwiftUI
 
 @main
-struct VN_iOSApp: App {
+struct VNApp: App {
     let story: InkStory
-    let backgroundMusicPlayer: AudioPlayer
+//    let backgroundMusicPlayer: AudioPlayer
     let sfxPlayer: AudioPlayer
     let ambiancePlayer: AudioPlayer
+    let audioManager: AudioManager
     
     init() {
+//        registerFonts()   Add this line
+        
         story = InkStory()
-        backgroundMusicPlayer = AudioPlayer(tagToObserve: "bgMusic", in: story, looping: true)
+        audioManager = AudioManager()
+           
+        // Preload all .m4a files
+        audioManager.preloadAllM4AAudio()
+        
+        // Set up audio tag observation
+        audioManager.observeStoryAudioTags(in: story)
+        
+//        backgroundMusicPlayer = AudioPlayer(tagToObserve: "bgMusic", in: story, looping: true)
         sfxPlayer = AudioPlayer(tagToObserve: "sfx", in: story, looping: false)
         ambiancePlayer = AudioPlayer(tagToObserve: "ambiance", in: story, looping: true)
         
